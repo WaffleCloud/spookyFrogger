@@ -1,50 +1,138 @@
+
+#bG{
+    background-color: rgba(239, 164, 106, 0.3);
+    text-align: center;
+    border: 3px dotted rgb(132, 179, 132); 
+    border-radius: 5%;
+    padding-bottom: 10px;
+}
+
 body {
+    background-color: #662A57;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
 }
 
-.car-left,
-.car-right {
-    background-color: gray;
-
+button {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #d1927d;
+    margin-top: 10px;
+    border: none;
+    height: 40px;
+    width: 120px;
+    cursor: pointer;
+    border: solid 1px rgb(211, 255, 195);
+    border-radius: 5%;
 }
 
-.ending-block {
-    background-color: red;
-}
-
-.l1, .l2, .l3 {
-    z-index: -10;
-    background-color: brown;
-}
-
-.l4, .l5 {
-    z-index: -10;
-    background-color: lightblue;
-}
-
-.starting-block {
-    background-color: blue;
-}
-
-.frog{
-    background-color: green;
-    z-index: 999;
+button:hover {
+    background-color: rgb(197,72,30, 0.3);
+    border: 3px solid rgb(0,0,0);
+    transition: all 0.5s ease-out;
 }
 
 .grid {
-    border: 1px solid black;
-    height: 180px;
-    width: 180px;
+    background: linear-gradient(#3b1231 .5%, #4B4240 25%, #C5481E 35%, #4B4240 50%, #A03957 70%, #4B4240 85%, #12200a 99.5%);
+    margin: 20px;
+    border: 5px solid #d5b1c8;
+    border-radius: 5%;
+    height: 540px;
+    width: 540px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
+.c1 {
+    /* background-color: #C5481E; */
+    background-image: url('drac.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.c2, .c3 {
+    /* background-color: #C5481E; */
+}
+
+/* .car-left,
+.car-right {
+    background-color: gray;
+
+} */
+
+.centered {
+    border: 1px solid black;
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: auto;
+}
+
+.ending-block {
+    background-image: url('witch.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.l1, .l2, .l3 {
+    /* background-color: #d7e9e6; */
+    background-image: url('zombo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.l4, .l5 {
+    
+    /* background-color: #d7e9e6; */
+}
+
 .grid div {
     /* border: 1px solid black; */
-    height: 20px;
-    width: 20px;
+    height: 60px;
+    width: 60px;
     
+}
+
+ 
+.text {    
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.frog{
+    background-image: url('frog.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top-stuff {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: auto;
+    
+}
+
+.wins { 
+    padding: 20px;
+    margin: 5px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 15px;
+    background-color: rgb(179, 132, 169);
+    border: solid 1px rgb(204, 243, 187);
+    border-radius: 100%;
 }

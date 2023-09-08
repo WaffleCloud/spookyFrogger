@@ -4,13 +4,22 @@
     <meta charset="'UTF-8">
     <title>Frogger</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
+<div class="centered">
 
-    <h3>Seconds left <span id="time-left">20</span></h3>
-    <h3>Result: <span id="result"></span></h3>
+    <div class="top-stuff"> 
+        <div class ='text' id="bG"> Return to your Mami Bruja!
+        <br>Look out for the Vamps and Zoms!</div>
+        <div class='text'><span id="result"></span></div>
+        <div class="wins">wins: <span id='win-text'></span></div>
+        <button id="start-pause-button">Start</button>
+        <div class='text'>Seconds left <span id="time-left">20</span></div>
+    </div>
 
-<button id="start-pause-button">Start/Pause</button>
     
     <div class="grid">
         <div></div>
@@ -95,6 +104,7 @@
         <div></div>
         <div></div>
     </div>
+</div>
 
     <script src="app.js"></script>
 
